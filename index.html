@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SMAZEE </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="Error 404 landing page">
+    <meta name="keywords" content="smazee error">
+    <meta name="author" content="pravindia">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+    <style>
+        body{
+            background: whitesmoke;
+        }
+        h1{
+            font-family: 'Orbitron', sans-serif;
+            padding-top: 40px;
+            height: 40%;
+            font-size: 50px;    
+        }
+        .back{  position: relative;
+            -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+            -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+            -webkit-animation-direction: alternate;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-direction: alternate;
+        }
+        @keyframes example {
+            0%   { left:0px; top:0px;}
+            100% {left:-50px; top:0px;}
+        }
+        /* Bubble Float Left */
+        .smazee{
+            height: 300px;
+            width: 300px
+        }
+        
+@media screen and (max-width: 480px) {
+    .smazee{
+        height: 200px;
+        width:200px;
+    }
+}
+.hvr-bubble-float-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-bubble-float-left:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: calc(50% - 10px);
+    left: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e1e1e1 transparent transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-bubble-float-left:hover, .hvr-bubble-float-left:focus, .hvr-bubble-float-left:active {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  a{
+      color: black;
+   }
+  a:hover {
+      text-decoration: none;
+      text-decoration-style: none;
+      text-decoration-color: none;
+      text-underline-position: 20%;
+  }
+  .footer{
+      color: #fff;
+      background: #000000;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+  }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h1 class="text-center">error 404</h1>
+    <a href="http://smazee.com"><p class="h4 back text-center py-2"><img src="./img/backspace.svg" alt="" id="back" class="hvr-bubble-float-left"> back to home page</p></a>
+    <div class="container text-center">
+        <img src="./img/broken.png" alt="smazee" class="smazee img-fluid">
+    </div>
+</div>
+<div class="footer py-1">
+    <div class="container">   
+    <span class="h5">&copy; Smazee
+    <p class="float-right">< / > by pravindia 
+    </p></span>
+</div>  
+</div>
+</body>
+</html>
